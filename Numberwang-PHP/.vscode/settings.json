@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/7af1202e-1f70-4af8-9687-8008e4e128cc/resourceGroups/FirstApp-AustraliaEast/providers/Microsoft.Web/sites/numberwang-php-491435x",
+    "appService.deploySubpath": "."
+}
