@@ -483,3 +483,7 @@ $RECYCLE.BIN/
 
 # Azure publishing profiles
 Properties/PublishProfiles/
+
+# VS Code local settings
+.vscode/
+**/.vscode/
