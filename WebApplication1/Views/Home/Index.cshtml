@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "Numberwang";
+}
+
+@if (ViewData["EnvironmentMessage"] is string environmentMessage)
+{
+    <p class="text-muted">
+        @environmentMessage
+    </p>
+}
+
+<div class="text-center">
+    <h1 class="display-3 fw-bold">Numberwang!</h1>
+
+    <p class="lead">
+        Enter any number and see if it's Numberwang.
+    </p>
+
+    <form asp-controller="Home" asp-action="Play" method="post">
+
+        <div class="mb-3">
+            <label for="userNumber" class="form-label">
+                Enter a number
+            </label>
+
+            <input type="number"
+                   id="userNumber"
+                   name="userNumber"
+                   class="form-control"
+                   required />
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+            Play Numberwang
+        </button>
+
+    </form>
+
+    @if (ViewBag.Result != null)
+    {
+        <div class="numberwang-result">
+
+            <p>
+                You entered:
+                <strong>@ViewBag.UserNumber</strong>
+            </p>
+
+            <h2 class="display-5 fw-bold">@ViewBag.Result</h2>
+
+        </div>
+    }
+
+    <section class="numberwang-info">
+        <h2 class="display-4">Numberwang Explained</h2>
+
+        <p>
+            Numberwang is a surreal parody of recurring maths quiz shows.
+            It was a featured sketch from the British comedy series
+            <em>That Mitchell and Webb Look</em>. Hosted by Robert Webb alongside
+            contestants played by David Mitchell, Olivia Colman, and
+            Paterson Joseph, the game features players shouting out random
+            numbers until the host declares, "That's Numberwang!"
+
+            There is no real rhyme or reason to the show's format, with
+            contestants taking turns calling out numbers or mathematical
+            statements. Rules, point values, and winning conditions are
+            completely fictitious and intentionally nonsensical.
+
+            Enjoy this version of Numberwang with no real winning conditions...
+            or are there?
+        </p>
+    </section>
+</div>

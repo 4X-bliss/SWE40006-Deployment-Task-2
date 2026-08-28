@@ -1,0 +1,89 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #E6E6FA;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #E6E6FA;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #384EA3 !important;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.navbar .nav-link {
+    color: white !important;
+}
+
+.navbar .nav-link:hover {
+    color: #FCE0D5 !important;
+}
+
+/* Main Numberwang heading */
+h1 {
+    color: #7322BF;
+    font-weight: bold;
+}
+
+/* Numberwang explanation */
+h2 {
+    color: #7322BF;
+}
+
+/* Button */
+.btn-primary {
+    background-color: #7322BF;
+    border-color: #7322BF;
+}
+
+.btn-primary:hover {
+    background-color: #384EA3;
+    border-color: #384EA3;
+}
+
+.numberwang-info {
+    margin-top: 40px;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.55);
+    border-radius: 12px;
+}
+
+.numberwang-result {
+    background-color: white;
+    border: 3px solid #7322BF;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+/* Footer */
+footer {
+    background-color: #384EA3;
+    color: white !important;
+}
+
+footer a {
+    color: white !important;
+}
